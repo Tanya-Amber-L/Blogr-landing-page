@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+:root {
+    --white-text: rgb(255, 255, 255);
+    --blue-text: rgb(31, 63, 91);
+    --light-red: rgb(255, 61, 84);
+    --light-orange: rgb(255, 143, 112);
+    --dark-grey: rgb(37, 37, 45);
+    --grey-blue: rgb(44, 45, 63);
+    --lighter-blue: rgb(63, 65, 100);
+}
+
+/* GENERAL STYLES  */
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: var(--white-text);
+    font-size: 16px;
+    color: var(--blue-text);
+    font-family: "Ubuntu", sans-serif;
+}
+header, .first-sec, .second-sec, .third-sec, footer {
+    padding: 50px 150px;
+}
+.header-logo {padding-right: 30px;}
+.header-text {padding: 100px;}
+
+header {
+    color: var(--white-text);
+    background: url(images/bg-pattern-intro.svg) , linear-gradient(to right, var(--light-orange), var(--light-red));
+    background-size: 200%, contain;
+    background-position-x: 25%;
+    background-position-y: 50%;
+    border-radius: 0 0 0 100px;
+}
+
+.first-sec-img {
+    background: url(images/illustration-editor-desktop.svg), url(images/bg-pattern-circles.svg);
+}
+
+.second-sec {
+    color: var(--white-text);
+    background: linear-gradient(to right, var(--grey-blue), var(--lighter-blue));
+    border-radius: 0 100px 0 100px;
+}
+.second-sec-img {
+    background: url(images/illustration-phones.svg), url(images/bg-pattern-circles.svg);
+}
+
+.third-sec-img{
+    background: url(images/illustration-laptop-desktop.svg), url(images/bg-pattern-circles.svg);
+}
+
+footer {
+    border-radius: 0 100px 0 0;
+}
+footer, .attribution {
+    color: var(--white-text);
+    background-color: var(--dark-grey);
+}
