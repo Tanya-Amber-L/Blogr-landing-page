@@ -22,7 +22,7 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 
 ### Screenshot
-(To add when challenge completed)
+![Desktop view](/images/solution-desktop-view.png)
 
 
 ## My process

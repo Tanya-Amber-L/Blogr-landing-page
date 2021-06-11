@@ -22,6 +22,9 @@ body {
     color: var(--blue-text);
     font-family: "Ubuntu", sans-serif;
     line-height: 30px;
+    width: 100vw;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 header, .second-sec, footer {
     padding: 50px 170px;
@@ -52,20 +55,39 @@ header {
     border-radius: 20px;
     padding: 15px 20px;
     margin: 10px;
+    transition: .2s;
 }
 .login-btn, .learn-more-btn {
     color: white;
+}
+.login-btn:hover, .learn-more-btn:hover {
+    color: var(--light-red);
+    background-color: var(--white-text);
 }
 .learn-more-btn {border: 1px solid var(--white-text);}
 .sign-up-btn, .start-btn {
     background-color: var(--white-text);
     color: var(--light-red);
 }
-select {
+.sign-up-btn:hover, .start-btn:hover {
+    background-color: rgba(255, 255, 255,0.3);
+    color: var(--white-text);
+}
+
+.dropdown button {
     color: var(--white-text);
     background-color: transparent;
+    margin: 0 10px;
+    padding: 0 10px;
     border: none;
-    width: 120px;
+    background: url(/images/icon-arrow-light.svg) no-repeat right;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+.dropdown button::after {border: none;}
+.dropdown-item:hover {
+    background-color: transparent;
+    font-weight: 700;
 }
 
 /* FIRST SECTION */
@@ -111,7 +133,7 @@ select {
 footer {
     border-radius: 0 100px 0 0;
 }
-footer a, footer a:active {
+footer a {
     text-decoration: none;
     color: var(--white-text);
 }
@@ -123,3 +145,8 @@ footer, .attribution {
     color: var(--white-text);
     background-color: var(--dark-grey);
 }
+.attribution a {
+    text-decoration: none;
+    color: var(--light-red);
+}
+.attribution a:hover {text-decoration: underline;}
