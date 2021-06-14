@@ -26,9 +26,6 @@ body {
     max-width: 100%;
     overflow-x: hidden;
 }
-header, .second-sec, footer {
-    padding: 50px 170px;
-}
 h1 {
     font-weight: 400;
     font-size: 47px;
@@ -49,12 +46,9 @@ header {
     border-radius: 0 0 0 100px;
 }
 .header-logo {padding-right: 30px;}
-.header-text {padding: 100px;}
 .login-btn, .sign-up-btn, .start-btn, .learn-more-btn {
     text-decoration: none;
     border-radius: 20px;
-    padding: 15px 20px;
-    margin: 10px;
     transition: .2s;
 }
 .login-btn, .learn-more-btn {
@@ -77,8 +71,6 @@ header {
 .dropdown button {
     color: var(--white-text);
     background-color: transparent;
-    margin: 0 10px;
-    padding: 0 10px;
     border: none;
     background: url(/images/icon-arrow-light.svg) no-repeat right;
     -webkit-appearance: none;
@@ -130,6 +122,7 @@ header {
     left: -450px;
 }
 
+/* FOOTER */
 footer {
     border-radius: 0 100px 0 0;
 }
