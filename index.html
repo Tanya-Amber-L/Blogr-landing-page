@@ -11,6 +11,7 @@
 
 <body>
     <main class="container-fluid">
+        
         <header class="row px-3 py-4 p-lg-5">
             <nav class="d-flex justify-content-between align-items-center pb-lg-3">
                 <div class="menu d-flex">
@@ -67,9 +68,14 @@
             </div>
         </header>
     
-        <section class="first-sec row d-flex align-items-center">
+    
+        <section class="first-sec row d-flex align-items-center px-4">
             <h2 class="text-center pb-5 col-12">Designed for the future</h2>
-            <div class="col-6">
+            <div class="col-12 d-flex justify-content-center">
+                <img class="first-sec-img-desk d-none d-lg-block" src="/images/illustration-editor-desktop.svg" alt="illustration blog views">
+                <img class="first-sec-img-mob d-flex d-lg-none" src="/images/illustration-editor-mobile.svg" alt="illustration blog views">
+            </div>
+            <div class=" first-sec-text col-12 text-center text-lg-left">
                 <h3 class="pt-5 pb-3">Introducing an extensible editor</h3>
                 <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
                     The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
@@ -79,27 +85,27 @@
                 <p>Flexible content management enables users to easily move through posts. Increase the usability of your blog 
                     by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
             </div>
-            <div class="first-sec-img col-6">
-                <img src="/images/illustration-editor-desktop.svg" alt="illustration desktop">
-            </div>
         </section>
     
-        <section class="second-sec row d-flex align-items-center">
-            <div class="second-sec-img col-6">
-                <img src="/images/illustration-phones.svg" alt="illustration phones">
+    
+        <section class="second-sec row d-flex align-items-center p-4 pt-5">
+            <div class="second-sec-img-div col-12 col-md-6">
+                <img class="second-sec-img" src="/images/illustration-phones.svg" alt="illustration phones">
             </div>
-            <div class="col-6 text-right">
-                <h2 class="pb-3">State of the Art Infrastructure</h2>
+            <div class="col-12 col-md-6 py-5 mt-5 mt-md-0 text-center">
+                <h2 class="pb-3 pt-5 pt-md-0">State of the Art Infrastructure</h2>
                 <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
                     This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
             </div>
         </section>
     
-        <section class="third-sec row d-flex align-items-center">
-            <div class="third-sec-img col-6">
-                <img src="/images/illustration-laptop-desktop.svg" alt="illustration-laptop">
+    
+        <section class="third-sec row d-flex align-items-center p-4">
+            <div class="col-12 col-lg-6 d-flex justify-content-center my-lg-5 py-lg-5">
+                <img class="third-sec-img-desk d-none d-lg-block" src="/images/illustration-laptop-desktop.svg" alt="illustration laptop blog">
+                <img class="third-sec-img-mob d-flex d-lg-none" src="/images/illustration-laptop-mobile.svg" alt="illustration laptop blog">
             </div>
-            <div class="col-6">
+            <div class="col-12 col-lg-6 text-center pb-5">
                 <h3 class="pt-5 pb-3">Free, open, simple</h3>
                 <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports 
                     features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
@@ -110,27 +116,28 @@
             </div>
         </section>
     
-        <footer class="row pb-0">
-            <div class="col col">
+    
+        <footer class="row p-4 pb-0 text-center">
+            <div class="col-12 col-lg-3 p-5">
                 <img src="images/logo.svg" alt="Blogr Logo">
             </div>
-            <div class="col d-flex flex-column">
-                <h4 class="pb-5">Product</h4>
+            <div class="col-12 col-sm-4 col-lg-3 d-flex flex-column">
+                <h4 class="pt-5 pb-3 pb-lg-5">Product</h4>
                 <a href="#">Overview</a>
                 <a href="#">Pricing</a>
                 <a href="#">Marketalace</a>
                 <a href="#">Features</a>
                 <a href="#">Integrations</a>
             </div>
-            <div class="col d-flex flex-column">
-                <h4 class="pb-5">Company</h4>
+            <div class="col-12 col-sm-4 col-lg-3 d-flex flex-column">
+                <h4 class="pt-5 pb-3 pb-lg-5">Company</h4>
                 <a href="#">About</a>
                 <a href="#">Team</a>
                 <a href="#">Blog</a>
                 <a href="#">Careers</a>
             </div>
-            <div class="col d-flex flex-column">
-                <h4 class="pb-5">Connect</h4>
+            <div class="col-12 col-sm-4 col-lg-3 d-flex flex-column">
+                <h4 class="pt-5 pb-3 pb-lg-5">Connect</h4>
                 <a href="#">Contact</a>
                 <a href="#">Newsletter</a>
                 <a href="#">LinkedIn</a>

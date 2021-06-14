@@ -1,15 +1,13 @@
 # Frontend Mentor - Blogr landing page
 
-This is a solution to the [Blogr landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP).
+This is a solution to the [Blogr landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP). I worked on this personal project to review and improve my use of Bootstrap.
 
 ## Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [Useful resources](#useful-resources)
+- [Built with](#built-with)
 - [Author](#author)
 
 ## Overview
@@ -25,18 +23,11 @@ Users should be able to:
 ![Desktop view](/images/solution-desktop-view.png)
 
 
-## My process
-
-### Built with
+## Built with
 
 - Semantic HTML5 markup
-- CSS custom properties & flexbox
+- CSS custom 
 - [Bootstrap](https://reactjs.org/)
-
-### Useful resources
-
-- [To add if necessary]() - This helped me for ...
-- To add if necessary]() - This ...
 
 
 ## Author
