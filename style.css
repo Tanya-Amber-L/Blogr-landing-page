@@ -151,7 +151,10 @@ footer, .attribution {
         top: 0;
     }
 
-    .second-sec-img {max-width: 450px;}
+    .second-sec-img {
+        max-width: 450px;
+        left: 100px;
+    }
 
     .third-sec-img-desk {
         position: relative;
