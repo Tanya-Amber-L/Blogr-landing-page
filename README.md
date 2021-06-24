@@ -24,7 +24,10 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 
 ### Screenshot
-![Desktop view](/images/solution-desktop-view.png) ![Mobile view](/images/solution-mobile-view.png)
+<p float="left">
+  <img src="/images/solution-desktop-view.png" alt="Desktop View" width="100">
+  <img src="/images/solution-mobile-view.png" alt="Mobile View" width="100">
+<p/>
 
 
 ## Built with
