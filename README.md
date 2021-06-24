@@ -25,10 +25,9 @@ Users should be able to:
 
 ### Screenshot
 <p float="left">
-  <img src="/images/solution-desktop-view.png" alt="Desktop View" width="100">
-  <img src="/images/solution-mobile-view.png" alt="Mobile View" width="100">
+  <img src="/images/solution-desktop-view.png" alt="Desktop View" width="700">
+  <img src="/images/solution-mobile-view.png" alt="Mobile View" width="192">
 <p/>
-
 
 ## Built with
 
