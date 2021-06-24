@@ -13,48 +13,57 @@
     <main class="container-fluid">
         
         <header class="row px-3 py-4 p-lg-5">
-            <nav class="d-flex justify-content-between align-items-center px-lg-5">
-                <div class="menu d-flex px-lg-5">
-                    <img class="header-logo" src="images/logo.svg" alt="Blogr Logo">
-                    <div class="dropdown d-none d-lg-block">
-                        <button class="dropdown-toggle px-3" type="button" data-bs-toggle="dropdown">
-                            Overview
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Pricing</a></li>
-                            <li><a class="dropdown-item" href="#">Product</a></li>
-                            <li><a class="dropdown-item" href="#">Marketplace</a></li>
-                            <li><a class="dropdown-item" href="#">Features</a></li>
-                            <li><a class="dropdown-item" href="#">Integrations</a></li>
-                        </ul>
+            <nav class="d-flex justify-content-between align-items-center px-lg-5 sidenav" data-mdb-hidden="false">
+                <div class="container-fluid d-flex justify-content-between align-items-center px-lg-5">
+                    <img class="header-logo" src="./images/logo.svg" alt="Blogr Logo">
+                    
+                    <div id="dropdown-container" class="dropdown-container flex-column flex-lg-row justify-content-lg-between align-items-center py-3">
+                        <div class="d-flex flex-column flex-lg-row align-items-center">
+                            <div class="dropdown">
+                                <button class="dropdown-toggle p-2 m-2" type="button" data-bs-toggle="dropdown">
+                                    Overview
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Pricing</a></li>
+                                    <li><a class="dropdown-item" href="#">Product</a></li>
+                                    <li><a class="dropdown-item" href="#">Marketplace</a></li>
+                                    <li><a class="dropdown-item" href="#">Features</a></li>
+                                    <li><a class="dropdown-item" href="#">Integrations</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown">
+                                <button class="dropdown-toggle p-2 m-2" type="button" data-bs-toggle="dropdown">
+                                    Company
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">About</a></li>
+                                    <li><a class="dropdown-item" href="#">Team</a></li>
+                                    <li><a class="dropdown-item" href="#">Blog</a></li>
+                                    <li><a class="dropdown-item" href="#">Careers</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown">
+                                <button class="dropdown-toggle p-2 m-2" type="button" data-bs-toggle="dropdown">
+                                    Connect
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Contact</a></li>
+                                    <li><a class="dropdown-item" href="#">Newsletter</a></li>
+                                    <li><a class="dropdown-item" href="#">LinkedIn</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div id="log-btns" class="log-btns py-3">
+                            <a class="login-btn p-3 m-1" href="#">Login</a>
+                            <a class="sign-up-btn p-3 m-1" href="#">Sign Up</a>
+                        </div>
                     </div>
-                    <div class="dropdown d-none d-lg-block">
-                        <button class="dropdown-toggle px-3" type="button" data-bs-toggle="dropdown">
-                            Company
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">About</a></li>
-                            <li><a class="dropdown-item" href="#">Team</a></li>
-                            <li><a class="dropdown-item" href="#">Blog</a></li>
-                            <li><a class="dropdown-item" href="#">Careers</a></li>
-                        </ul>
+                    
+                    <div class="hamburger d-lg-none">
+                        <img id="hamburger-icon" src="./images/icon-hamburger.svg" alt="">
+                        <img id="cross-icon" src="./images/icon-close.svg" alt="">
                     </div>
-                    <div class="dropdown d-none d-lg-block">
-                        <button class="dropdown-toggle px-3" type="button" data-bs-toggle="dropdown">
-                            Connect
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Contact</a></li>
-                            <li><a class="dropdown-item" href="#">Newsletter</a></li>
-                            <li><a class="dropdown-item" href="#">LinkedIn</a></li>
-                        </ul>
-                    </div>
-                </div>
-                
-                
-                <div class="log-btns d-none d-lg-block px-lg-5">
-                    <a class="login-btn p-3 m-1" href="#">Login</a>
-                    <a class="sign-up-btn p-3 m-1" href="#">Sign Up</a>
                 </div>
             </nav>
             
@@ -72,8 +81,8 @@
         <section class="first-sec row d-flex align-items-center px-4 px-lg-5">
             <h2 class="text-center pb-5 col-12">Designed for the future</h2>
             <div class="col-12 d-flex justify-content-center">
-                <img class="first-sec-img-desk d-none d-lg-block" src="/images/illustration-editor-desktop.svg" alt="illustration blog views">
-                <img class="first-sec-img-mob d-flex d-lg-none" src="/images/illustration-editor-mobile.svg" alt="illustration blog views">
+                <img class="first-sec-img-desk d-none d-lg-block" src="./images/illustration-editor-desktop.svg" alt="illustration blog views">
+                <img class="first-sec-img-mob d-flex d-lg-none" src="./images/illustration-editor-mobile.svg" alt="illustration blog views">
             </div>
             <div class=" first-sec-text col-12 px-lg-5">
                 <h3 class="pt-5 pb-3 px-lg-5">Introducing an extensible editor</h3>
@@ -90,7 +99,7 @@
     
         <section class="second-sec row d-flex align-items-center p-4 pt-5">
             <div class="second-sec-img-div col-12 col-md-6">
-                <img class="second-sec-img" src="/images/illustration-phones.svg" alt="illustration phones">
+                <img class="second-sec-img" src="./images/illustration-phones.svg" alt="illustration phones">
             </div>
             <div class="col-12 col-md-6 py-5 mt-5 mt-md-0 px-lg-5 text-center">
                 <h2 class="pb-3 pt-5 pt-md-0 px-lg-5">State of the Art Infrastructure</h2>
@@ -102,8 +111,8 @@
     
         <section class="third-sec row d-flex align-items-center p-4">
             <div class="col-12 col-lg-6 d-flex justify-content-center my-lg-5 py-lg-5">
-                <img class="third-sec-img-desk d-none d-lg-block" src="/images/illustration-laptop-desktop.svg" alt="illustration laptop blog">
-                <img class="third-sec-img-mob d-flex d-lg-none" src="/images/illustration-laptop-mobile.svg" alt="illustration laptop blog">
+                <img class="third-sec-img-desk d-none d-lg-block" src="./images/illustration-laptop-desktop.svg" alt="illustration laptop blog">
+                <img class="third-sec-img-mob d-flex d-lg-none" src="./images/illustration-laptop-mobile.svg" alt="illustration laptop blog">
             </div>
             <div class="col-12 col-lg-6 text-center pb-5 px-lg-5">
                 <h3 class="pt-5 pb-3  px-lg-5">Free, open, simple</h3>
@@ -119,7 +128,7 @@
     
         <footer class="row p-4 pb-0 text-center">
             <div class="col-12 col-lg-3 p-5">
-                <img src="images/logo.svg" alt="Blogr Logo">
+                <img src="./images/logo.svg" alt="Blogr Logo">
             </div>
             <div class="col-12 col-sm-4 col-lg-3 d-flex flex-column">
                 <h4 class="pt-5 pb-3 pb-lg-5">Product</h4>
@@ -150,5 +159,6 @@
         
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
 </body>
 </html>

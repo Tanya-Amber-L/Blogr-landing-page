@@ -50,16 +50,20 @@ header {
     text-decoration: none;
     border-radius: 20px;
     transition: .2s;
+    font-weight: 500;
 }
-.login-btn, .learn-more-btn {
-    color: white;
-}
+.login-btn {color: var(--dark-grey);}
+.learn-more-btn {color: var(--white-text);}
 .login-btn:hover, .learn-more-btn:hover {
     color: var(--light-red);
     background-color: var(--white-text);
 }
 .learn-more-btn {border: 1px solid var(--white-text);}
-.sign-up-btn, .start-btn {
+.sign-up-btn {
+    background: linear-gradient(to right, var(--light-orange), var(--light-red));
+    color: var(--white-text);
+}
+.start-btn {
     background-color: var(--white-text);
     color: var(--light-red);
 }
@@ -68,11 +72,20 @@ header {
     color: var(--white-text);
 }
 
+.dropdown-container{
+    background-color: var(--white-text);
+    display: none;
+    border-radius: 10px;
+    width: 94%;
+    position: absolute;
+    top: 80px;
+    left: 3%;
+}
 .dropdown button {
-    color: var(--white-text);
+    color: var(--dark-grey);
     background-color: transparent;
     border: none;
-    background: url(/images/icon-arrow-light.svg) no-repeat right;
+    background: url(./images/icon-arrow-dark.svg) no-repeat right;
     -webkit-appearance: none;
     -moz-appearance: none;
 }
@@ -96,7 +109,7 @@ header {
 .second-sec {
     color: var(--white-text);
     border-radius: 0 100px 0 100px;
-    background: url(/images/bg-pattern-circles.svg), linear-gradient(to right, var(--grey-blue), var(--lighter-blue));
+    background: url(./images/bg-pattern-circles.svg), linear-gradient(to right, var(--grey-blue), var(--lighter-blue));
     background-repeat: no-repeat;
     background-position-x: -55%;
     background-position-y: 80%;
@@ -138,8 +151,29 @@ footer, .attribution {
 }
 .attribution a:hover {text-decoration: underline;} 
 
+/* RESPONSIVE MENU MANAGEMENT */
+#cross-icon {display: none;}
+
+
 /* RESPONSIVE */
 @media only screen and (min-width: 992px) {
+    .dropdown-container{
+        position: relative;
+        top: 0;
+        left: 0;
+        display: flex!important;
+        background-color: transparent;
+    }
+    .dropdown button {
+        color: var(--white-text);
+        background: url(./images/icon-arrow-light.svg) no-repeat right;
+    }
+    .login-btn {color: var(--white-text);}
+    .sign-up-btn {
+        background: var(--white-text);
+        color: var(--light-red);
+    }
+
     .first-sec {position: relative;}
     .first-sec-text {
         width: 50%;
